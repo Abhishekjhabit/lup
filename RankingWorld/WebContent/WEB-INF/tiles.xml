@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	
+	<definition name="HomePageLayout"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	<definition name="basic"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/HomeHeader1.jsp" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/Footer.jsp" />
+	</definition>
+	
+	
+	<!-- To navigate to "Aboutus" -->
+	<definition name="Aboutus" extends="basic">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Aboutus.jsp" />
+	</definition>
+	
+	
+	<definition name="Home" extends="HomePageLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Home.jsp" />
+	</definition>
+	<definition name="search" extends="HomePageLayout">		
+		<put-attribute name="body" value="/WEB-INF/jsp/Search.jsp" />
+	</definition>
+	
+	
+	
+	
+	
+	
+	
+</tiles-definitions>
